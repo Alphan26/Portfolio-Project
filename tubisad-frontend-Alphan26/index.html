@@ -1,0 +1,586 @@
+<!doctype html>
+<html lang="tr">
+<!-- title-->
+<title>My page</title>
+<!-- favicon -->
+<link rel="icon" href="picture/favicon.jpg" />
+
+<!-- Turkce karakter -->
+<meta charset="utf-8" />
+
+<!-- responsive design -->
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- seo -->
+<meta name="keywords" content="html5,css3,js,jquery,bootstrap,react,es5,es6" />
+<meta name="description" content="one pages, html5,css3,js,jquery,bootstrap,seo" />
+<meta name="author" content="Hamit Mızrak" />
+
+<!-- Google Fonts-->
+<!-- <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Quicksand:wght@300&display=swap"
+    rel="stylesheet"> -->
+<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+
+<!-- Font awesome-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+<!-- Bootstrap CSS v5.0.2 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+
+<!-- jquery UI -->
+<link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="/resources/demos/style.css">
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+ <!-- Bootstrap JavaScript Libraries -->
+ <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ <!-- External JS -->
+
+<!-- External CSS -->
+<link rel="stylesheet" href="style.css">
+
+<!-- animate CSS-->
+<link rel="stylesheet" href="css/animate.min.css">
+<!-- wow js-->
+<script src="js/wow.min.js"></script>
+<script> new WOW().init() </script>
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar-example">
+
+    <!-- Navbar start -->
+    <nav class="navbar fixed-top  navbar-expand-lg navbar-dark bg-dark" id="navbar">
+        <!-- Container wrapper -->
+        <div class="container" id="navbar-example">
+            <!-- Navbar brand -->
+            <div id="logo_div">
+                <a class="navbar-brand me-2" href="#">
+                    <img src="//d9hhrg4mnvzow.cloudfront.net/www.techcareer.net/mainpage/en/57e21290-techcareer-logo-web_104600g000000000000028.png"
+                        height="16" alt="MDB Logo" loading="lazy" style="margin-top: -1px;" />
+                </a>
+            </div>
+
+            <!-- Toggle button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar_id"
+                aria-controls="navbar_id" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Collapsible wrapper -->
+            <div class="collapse navbar-collapse" id="navbar_id">
+                <!-- Left links -->
+                <ul class="navbar-nav me-auto ms-5 mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link me-2" href="#ability"> <i class="fa-brands fa-battle-net"></i>Ability</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section_3"> <i class="fa-solid fa-rectangle-ad"></i>Who am I</a>
+                    </li>
+  
+                    <li class="nav-item">
+                        <a class="nav-link" href="#address_id"> <i class="fa-solid fa-address-card"></i>Contact</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section10"> <i class="fa-solid fa-people-group"></i>Projects</a>
+                    </li>
+
+                </ul>
+                
+            </div>
+            <!-- Collapsible wrapper -->
+        </div>
+        <!-- Container wrapper -->
+    </nav>
+    <!-- Navbar ends -->
+
+    <!-- Button trigger modal -->
+
+
+    <!-- Modal : Login -->
+    <!-- modal-login start -->
+    <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6 class="modal-title">Login</h6>
+                    <button type="button" class="btn-close btn-sm" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <!-- Email input -->
+                        <div class="form-outline mb-4">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-1"> <label class="form-label" for="user_email">
+                                            <i class="fa-solid fa-envelope"></i>
+                                        </label></div>
+                                    <div class="col">
+                                        <input type="text" id="user_email" name="user_email" placeholder="email adresiniz ..." class="form-control" />
+                                        <span id="validation_email" class="text-danger" style="font-size:.8rem ;"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Password input -->
+                        <div class="form-outline mb-4">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-1"> <label class="form-label" for="user_password">
+                                            <i class="fa-solid fa-key"></i>
+                                        </label></div>
+                                    <div class="col">
+                                        <input type="text" id="user_password" name="user_password" placeholder="şifreniz ..." class="form-control" />
+                                        <span id="validation_password" class="text-danger" style="font-size:.8rem ;"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-outline mt-2 mb-2">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-1"> <label class="form-label" for="form2Example1">
+                                        </label></div>
+                                    <div class="col">
+                                        <button type="reset" class="btn btn-outline-danger">Temizle</button>
+                                        <button id="btnSubmit" type="submit" class="btn btn-outline-primary">Giriş
+                                            Yap</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                </form>
+                </div>
+                </div>
+                </div>
+    </div>
+    <!-- modal-login ends -->
+
+
+    <!-- Modal Register -->
+    <div class="modal fade" id="registerId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Register</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <!-- Email input -->
+                        <div class="form-outline mb-4">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-1"> <label class="form-label" for="user_email">
+                                            <i class="fa-solid fa-envelope"></i>
+                                        </label></div>
+                                    <div class="col">
+                                        <input type="text" id="reg_email" name="user_email" placeholder="email adresiniz ..." class="form-control" />
+                                        <span id="reg_validation_email" class="text-danger" style="font-size:.8rem ;"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Password input -->
+                        <div class="form-outline mb-4">
+                            <div class="container wow animated bounceIn>
+                                <div class="row">
+                                    <div class="col-1"> <label class="form-label" for="user_password">
+                                            <i class="fa-solid fa-key"></i>
+                                        </label></div>
+                                    <div class="col">
+                                        <input type="text" id="reg_password" name="user_password" placeholder="şifreniz ..." class="form-control" />
+                                        <span id="reg_validation_password" class="text-danger" style="font-size:.8rem ;"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button id="registerSubmit" type="submit" class="btn btn-primary">Save</button>
+                        </div>
+                </div>
+                </form>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- navbar end -->
+
+    <!-- header-start -->
+    <header id="header">
+        <div class="jumbotron text-white">
+            <div class="container" style="opacity:.9">
+                <div class="p-5 text-center">
+                    <h1 class="text-uppercase display-3 shadow wow bounceIn animated" data-wow-delay=".40s">Alphan
+                        Elmas</h1>
+                    <h4 class="wow bounceIn animated" data-wow-delay=".50s"> My Portfolio</h4>
+                    <a class="btn btn-outline-warning shadow wow bounceIn animated " data-wow-delay=".50s" href="https://github.com/Alphan26">
+                        Follow me On Github </a>
+                    <a class="btn btn-outline-danger shadow wow bounceIn animated" data-wow-delay=".50s" href="https://www.linkedin.com/in/alphan-elmas-ae26/">
+                        Follow me On Linkedin </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header-end -->
+
+    <!-- main-start -->
+    <main>
+     
+
+        <section id="section_3">
+            <div class="container">
+                <div class="row">
+                    <h2 class="text-uppercase display-6 text-center wow rotateInDownLeft animated mb-4" data-wow-delay=".40">
+                        Who am I</h2>
+                    <p id="newspaper_id" class=" wow rotateInDownRight animated" data-wow-delay=".40">
+                        I am 22 year old, recently graduated student from Eskişehir.I studied Software Engineering program between 2018 to 2022 in Işık University which is in Istanbul. Throughout my school career I mostly worked 
+                        on Web Development area and its technologies such as HTML,CSS, Javascript and a web framework Django, as well as learned some common languages which
+                        are Java and Python. I had some experience on C# though. I have also small experience in Android apps and Data Mining areas. However my career goal is to become an AI Engineer
+                        and help people in the future. 
+                    
+                    </p>
+                    <p id="newspaper_id" class=" wow rotateInDownRight animated" data-wow-delay=".40"> 
+                        I think my biggest advantage is the team work because i am involved in team sports since I was 11 and I played for 5 different teams in basketball 
+                        also we did some group projects in our department. I also can implement what I learn quickly.
+                    </p>
+                    <div class="col-md-5"></div>
+                    <div class="col-md-4">
+                        <a href="" class="btn btn-outline-warning text-center btn-lg wow rotateInDownLeft animated"
+                            data-wow-delay=".80">Read me ..</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+
+        <!-- section-1 start : ability -->
+        <section id="ability">
+            <div class="container" style=" margin-bottom:3rem;">
+                <p class="text-uppercase display-6 text-center text-light mt-4">My Abılıtıes</p>
+                <div class="row">
+                    
+                    <div class=" col-md-12 col-lg-4 text-white text-center wow rotateInDownLeft animated d-flex flex-row justify-content-between ">
+                        <div >
+                            <i class="fa-brands fa-html5"></i>
+                        </div>
+                        <div>
+                            <span class="text-center " style="font-size: 2rem;">HTML</span>
+                        <p class="">I am using HTML for 2 years and did some projects using this technology.</p>
+                        </div>
+                       
+                        
+                    </div>
+                    <div class=" col-md-12 col-lg-4  text-white text-center wow rotateInDownLeft animated d-flex flex-row justify-content-between">
+                        <div >
+                            <i class="fa-brands fa-css3 mt-3 text-primary"></i>
+                        </div>
+                        <div>
+                            <span class="text-center " style="font-size: 2rem;".>CSS</span>
+ 
+                        <p class="text-center">I am using CSS for 2 years and did some projects using this technology.</p>
+                        </div>
+                        
+                    </div>
+                    <div class=" col-md-12 col-lg-4  text-white text-center wow rotateInDownLeft animated d-flex flex-row justify-content-between">
+                        <div >
+                            <i class="fa-brands fa-js text-success"></i>
+                        </div>
+                        <div>
+                            <span class="text-center text-uppercase" style="font-size: 2rem;">JavaScript</span>
+                        <p class="text-center ">I am using JavaScript for 2 years and did some projects using this technology.</p>
+                        </div>
+                        
+                    </div>
+                    <div class=" col-md-12 col-lg-4  text-white text-center wow rotateInDownLeft animated d-flex flex-row justify-content-between mt-5">
+                        <div >
+                            <i class="fa-brands fa-python text-info"></i>
+                        </div>
+                        <div>
+                            <span class="text-center text-uppercase mt-3" style="font-size: 2rem;">Python</span>
+                        <p class="text-center">I am using Python for 2 years and did some projects using this technology.</p>
+                        </div>
+                        
+                    </div>
+                    <div class=" col-md-12 col-lg-4  text-white text-center wow rotateInDownLeft animated d-flex flex-row justify-content-between mt-5">
+                        <div >
+                            <i class="fa-brands fa-js text-warning"></i>
+                        </div>
+                        <div>
+                            <span class="text-center text-uppercase" style="font-size: 2rem;">Django</span>
+                        <p class="text-center">I am using Django for 2 years and did some projects using this technology.</p>
+                        </div>
+                        
+                    </div>
+                    <div class=" col-md-12 col-lg-4  text-white text-center wow rotateInDownLeft animated d-flex flex-row justify-content-between mt-5">
+                        <div >
+                            <i class="fa-brands fa-java text-secondary"></i>
+                        </div>
+                        <div>
+                            <span class="text-center text-uppercase" style="font-size: 2rem;">Java</span>
+                        <p class="text-center">I am using Java for 3 years and did some projects using this technology.</p>
+                        </div>
+                        
+                    </div>
+                    <div class="container">
+                        <h3 class="text-center display-6 text-white mt-5 ">How Much I Know All Of Them</h3>
+                        <div class="progressBar d-flex flex-column justify-content-center align-items-center pt-5">
+                            <div class="progress mb-4 mt-3 w-75">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 80%; " aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80% HTML</div>
+                              </div>
+                            <div class="progress mb-4 w-75">
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70% CSS</div>
+                              </div>
+                            <div class="progress mb-4  w-75">
+                                <div class="progress-bar bg-success" role="progressbar" style="width:50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50% Javascript</div>
+                              </div>
+                            <div class="progress mb-4 w-75">
+                                <div class="progress-bar bg-info" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70% Python</div>
+                              </div>
+                            <div class="progress mb-4 w-75">
+                                <div class="progress-bar bg-warning" role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">40% Django</div>
+                              </div>
+                            <div class="progress mb-4 w-75">
+                                <div class="progress-bar bg-secondary" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50% Java</div>
+                              </div>
+                        </div>
+                        
+                    </div>
+                   
+                    
+                </div>
+            </div>
+        </section>
+        <!-- section-1 end -->
+
+        <!-- parallax scrolling start -->
+        <section class="parallax_class">
+            <div class="container">
+                <div class="row">
+                    <h2 class="text-center mb-3">Why You Should Choose Me</h2>
+                    <p class="text-light">Because I am aware of my responsibilities and get the job done when it's asked. I have
+                        good relationships with people and I like to listen them. I have worked as a coach for four months 
+                        and had an opportunity to work with at least 50 students so I have an experience to communicate with different
+                        people. I also played basketball for ten years and I played in 5 different teams as well as I have participated
+                        several group projects in my school and as a volunteer. When these things combine with my skills I become the ideal employee for your company.
+                    </p>
+                    
+                </div>
+            </div>
+
+        </section>
+        <!-- parallax scrolling start -->
+
+        <!-- section-10 ends : Icon -->
+        <section id="section10">
+            <div class="icon_message">
+                <h2 class="text-center text-uppercase mb-5">My Projects</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-3 col-xl-4 text-center wow rotateInDownLeft animated"
+                            data-wow-delay=".40">
+                            <i class="fa-brands fa-cc-amazon-pay text-center"></i>
+                            <h4>E-Voting</h4>
+                            <p>It's an online voting system designed to use vote easily for determining
+                                anything. It's written on Django.
+                            </p>
+                            <div class="col-12 text-center"><a href="https://github.com/Alphan26/E-Voting" class="btn btn-outline-primary">More On Github</a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3 col-xl-4 text-center wow rotateInUpLeft animated"
+                            data-wow-delay=".50">
+                            <i class="fa-solid fa-chart-pie"></i>
+                            <h4>Udemy Clone</h4>
+                            <p>This was our graduation project that aims people to learn new technologies. It is written on Node.js
+                               for backend and html css javascript for frontend.
+                                
+                            </p>
+                            <div class="col-12 text-center"><a href="https://github.com/senturkkburak/e-Learn" class="btn btn-outline-primary">More On Github</a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3 col-xl-4 text-center wow rotateInDownRight animated"
+                            data-wow-delay=".60">
+                             <!-- <i class="fa-solid fa-cubes"></i> -->
+                             <i class="fa-solid fa-clone"></i>
+                            <h4>Data Table</h4>
+                            <p>This is a system that takes data from a given excel file and print
+                                them out in a datatable. It's written in C#.
+                            </p>
+                            <div class="col-12 text-center"><a href="https://github.com/Alphan26/DataTable" class="btn btn-outline-primary">More On Github</a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3 col-xl-4 mt-3 text-center wow rotateInDownRight animated"
+                            data-wow-delay=".60">
+                            <i class="fa-sharp fa-solid fa-headphones"></i>
+                            <h4>Urban Sound Classification</h4>
+                            <p> We classified the urban sounds into 10 different classes such as dog bark or car honk. We've used
+                                tensorflow in this project and used Convolutional Neural Network. We had spectogram images of the sounds.
+                                We scaled them and used for our dataset.
+                            </p>
+                            <div class="col-12 text-center"><a href="https://github.com/Arda66/UrbanSound_Classification" class="btn btn-outline-primary">More On Github</a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3 col-xl-4 mt-4 text-center wow rotateInDownRight animated"
+                            data-wow-delay=".60">
+                            <i class="fa-solid fa-spider"></i>
+                            <h4>Web Crawling</h4>
+                            <p>I crawled in the famous Turkish forum site Eksi Sozluk using Beautiful Soup Library in Python.
+                                I also used MySQL database for storing the required information such as author, entry date, entry etc.
+                            </p>
+                            <div class="col-12 text-center"><a href="#" class="btn btn-outline-primary">More On Github</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section-10 ends : Icon -->
+
+        <!-- section-3 start : NewsPaper -->
+       
+
+        <section id="section_4">
+            <div class="container">
+                <div class="row mt-5 py-5">
+                    <div class="col-md-6 col-lg-3 text-center">
+                        <i class="mb-3 fa-solid fa-arrow-up-1-9 text-warning" ></i>
+                        <p class="num font-weight-bold text-center text-white display-6 " data-val="10">00</p>
+                        <p class="text-center">Amount of projects I did</p>
+                    </div>
+                    <div class="col-md-6 col-lg-3 text-center">
+                        <i class="mb-3 fa-solid fa-clock text-warning" ></i>
+                        <p class="num font-weight-bold text-center text-white display-6 " data-val="200">000</p>
+                        <p class="text-center">Estimated Work Hour</p>
+                    </div>
+                    <div class="col-md-6 col-lg-3 text-center">
+                        <i class="mb-3 fa-solid fa-calendar text-warning" ></i>
+                        <p class="num font-weight-bold text-center text-white display-6 " data-val="4">0</p>
+                        <p class="text-center">Years Spent With Software</p>
+                    </div>
+                    <div class="col-md-6 col-lg-3 text-center">
+                        <i class="mb-3  fa-solid fa-arrow-up-1-9 text-warning" ></i>
+                        <p class="num font-weight-bold text-center text-white display-6 " data-val="10">00</p>
+                        <p class="text-center">Amount of Software Techs I Know</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- main-end -->
+
+
+    <!-- footer-start -->
+    <footer class="text-center text-lg-start">
+        <!-- footer-tab-1 start -->
+        <section id="section_footer_1" class="p-4 border-top d-flex justify-content-center justify-content-lg-between">
+            <div class="me-5 d-none d-lg-block">
+                <span>My Portfolio</span>
+            </div>
+
+            <!-- social -->
+            <div id="social_id">
+                <a href="https://www.linkedin.com/in/alphan-elmas-ae26/" class="me-1 btn btn-outline-primary text-reset btn-floating">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com/alphan.elmas/" class="me-1 btn btn-outline-warning text-reset btn-floating">
+                    <i class="fa-brands fa-instagram-square"></i>
+                </a>
+                
+                </a> <a href="https://github.com/Alphan26" class="me-1 btn btn-outline-danger text-reset btn-floating">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+        </section>
+        <!-- footer-tab-1 end -->
+
+        <!-- footer-tab-2 start -->
+        <section id="section_footer_2">
+            <div class="container text-center text-md-start mt-5">
+                <div class="row mt-4">
+                    <!-- medium device:4 
+                    large device :3
+                    xlarge device :4 -->
+
+                    <!-- left-1 -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-5 shadow">
+                        <h6 class="text-uppercase mb-4">
+                            <i style="font-size:2rem; margin-right:.3rem;" class="fa-brands fa-avianex"></i> Company
+                            INC.
+                        </h6>
+                        <p style="text-align:left!important" class="line_clamp3">
+                            E-Ticaret Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia veniam rerum ab
+                            explicabo temporibus tempora! Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+                            sit molestiae et veritatis voluptates iure.
+                        </p>
+                    </div>
+
+                    <!-- left-2 -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-5 shadow">
+                        <h6 class="text-uppercase mb-3">FrontEnd</h6>
+                        <p><a href="" class="text-reset">Html5</a></p>
+                        <p><a href="" class="text-reset">CSS3</a></p>
+                        <p><a href="" class="text-reset">JS</a></p>
+                    </div>
+
+                    <!-- left-3 -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-5 shadow">
+                        <h6 class="text-uppercase mb-3">Backend</h6>
+                        <p><a href="" class="text-reset">Node JS</a></p>
+                        <p><a href="" class="text-reset">Java</a></p>
+                        <p><a href="" class="text-reset">C#</a></p>
+                    </div>
+
+                    <!-- left-4 -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-5 shadow" id="address_id">
+                        <h6 class="text-uppercase mb-3">Contact</h6>
+                        <p><i class="fa-solid fa-earth-africa"></i> Turkey</p>
+                        <p><i class="fa-solid fa-envelope-open-text"></i>
+                            <a href="mailto:alphanhilal@gmail.com">alphanhilal@gmail.com</a>
+                        </p>
+                        <p><i class="fa-solid fa-mobile-retro"></i>
+                            <a href="tel:90111223344">90 533 697 78 68</a>
+                        </p>
+                        
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <button onclick="date()" class="btn btn-outline-danger">Date</button>
+                            <span id="date_id"></span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- footer-tab-2 end -->
+
+        <!-- CopyRight -->
+        <div class="text-center p-5 bg-dark" id="copy_right">
+            &copy; ©2022 Copyright;
+            <a href="" >Alphan Elmas</a>
+        </div>
+    </footer>
+    <!-- footer-end -->
+
+    <button id="back_top" onclick="topFunction()" class="btn btn-warning btn-sm"><i
+            class="fa-solid fa-arrow-up-long text-light me-2"></i>TOP </button>
+
+   
+    
+    <script src="template.js"></script>
+</body>
+
+</html>
